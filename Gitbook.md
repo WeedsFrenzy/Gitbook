@@ -456,6 +456,20 @@ Gitbook默认自带有5个插件：
 
 - 点击即可访问该项目
 
+## 常见问题
+
+### 图片显示问题
+
+- 上传到Github后，文件读取的路径与本地并不一致
+- 目前已知两种解决方法
+
+```
+1、将图片上传至图床，使用外部链接
+2、将图片路径改为Github上可以访问到的绝对路径（相当于图床）
+要点到下载按钮，正确的图片路径如下所示：
+https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG
+```
+
 ## 参考资料
 
 - Gitbook安装使用避坑：https://blog.csdn.net/qq_43528771/article/details/107949010
