@@ -37,7 +37,7 @@
             "url": "https://github.com/WeedsFrenzy/Gitbook"
         },
         "edit-link": {
-            "base": "https://github.com/WeedsFrenzy/Gitbook",
+            "base": "https://github.com/WeedsFrenzy/Gitbook/edit/main/",
             "label": "Edit This Page"
         },
         "insert-logo": {
