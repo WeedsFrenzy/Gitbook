@@ -26,22 +26,22 @@
     ],
     "pluginsConfig": {
         "donate": {
-            "wechat": "/assets/images/wechatpay.jpg",
-            "alipay": "/assets/images/alipay.jpg",
+            "wechat": "./assets/images/wechatpay.jpg",
+            "alipay": "./assets/images/alipay.jpg",
             "title": "",
             "button": "打赏",
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
         },
         "github": {
-            "url": "https://github.com/GitbookIO/gitbook"
+            "url": "https://github.com/WeedsFrenzy/Gitbook"
         },
         "edit-link": {
-            "base": "https://github.com/GitbookIO/gitbook/blob/master/README.md",
+            "base": "https://github.com/WeedsFrenzy/Gitbook",
             "label": "Edit This Page"
         },
         "insert-logo": {
-            "url": "/assets/images/logo.png",
+            "url": "./assets/images/logo.png",
             "style": "background: none; width: 150px; height: 150px;"
         },
         "sharing": {
