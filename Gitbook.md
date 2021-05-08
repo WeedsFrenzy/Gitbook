@@ -235,22 +235,22 @@ Gitbook的配置文件为book.json，如果没有则新建
     ],
     "pluginsConfig": {
         "donate": {
-            "wechat": "/assets/images/wechatpay.jpg",
-            "alipay": "/assets/images/alipay.jpg",
+            "wechat": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/wechatpay.JPG",
+            "alipay": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/alipay.JPG",
             "title": "",
             "button": "打赏",
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
         },
         "github": {
-            "url": "https://github.com/GitbookIO/gitbook"
+            "url": "https://github.com/WeedsFrenzy/Gitbook"
         },
         "edit-link": {
-            "base": "https://github.com/GitbookIO/gitbook/blob/master/README.md",
+            "base": "https://github.com/WeedsFrenzy/Gitbook/edit/main/",
             "label": "Edit This Page"
         },
         "insert-logo": {
-            "url": "/assets/images/logo.png",
+            "url": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG",
             "style": "background: none; width: 150px; height: 150px;"
         },
         "sharing": {
@@ -456,6 +456,48 @@ Gitbook默认自带有5个插件：
 
 - 点击即可访问该项目
 
+### 个人VPS
+
+- 在VPS上安装apache或者nginx，然后将编译后的HTML文件上传到网址目录下
+
+
+
+### 个人VPS
+
+#### 购买VPS
+
+- 推荐[Vultr](https://www.vultr.com/)
+- 新建一个服务器（很多人都用日本、新加坡的节点进行fq，这些很多都被墙了，推荐其他节点）
+
+#### 购买域名
+
+- 推荐[namesilo](https://www.namesilo.com/)
+
+- ```
+  - 它是ICANN认证
+  - 广告做的少, 把很多优惠都让给了用户
+  - 很少很少玩套路, 价格透明, 并且续费价格不变, 没有隐藏费用
+  - 赠送终身的域名隐私保护WhoisGuard
+  - 免备案, 购买即可立即使用
+  ```
+
+#### 域名绑定
+
+##### GIthub
+
+- GitHub Help: [Setting up an apex domain](https://help.github.com/articles/setting-up-an-apex-domain/)
+- 在namesilo官网上的个人管理中心配置域名A记录、CNAME记录（IP为Github的IP地址，在上面的链接中有）
+- 在Github仓库中进行设置，Pages目前是Github的二级域名，可以将前面设置的
+
+##### 个人VPS
+
+- 与Github的区别仅在于将IP地址改为个人VPS的IP地址
+- 修改Nginx的配置并重启Nginx
+- 目前是HTTP的不安全，可以使用[certbot](https://certbot.eff.org/): [https://certbot.eff.org](https://certbot.eff.org/)软件绑定TLS证书（自动化配置工具）
+- 浏览器会检查网页内所有的链接，如果图片链接是http的也会显示不安全
+
+
+
 ## 常见问题
 
 ### 图片显示问题
@@ -469,6 +511,16 @@ Gitbook默认自带有5个插件：
 要点到下载按钮，正确的图片路径如下所示：
 https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG
 ```
+
+### 修改文件服务器自动退出的问题
+
+- 该问题仅在Windows平台上会出现，解决方法是运行后，删除文件夹下的_book文件夹
+
+### 调整文字颜色大小
+
+- 有两种方法
+  - 1、直接在md内使用html语法
+  - 2、在book.json配置文件中添加styles配置信息，并新建styles对应的css文件，在里面进行定义
 
 ## 参考资料
 
