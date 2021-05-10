@@ -235,8 +235,8 @@ Gitbook的配置文件为book.json，如果没有则新建
     ],
     "pluginsConfig": {
         "donate": {
-            "wechat": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/wechatpay.JPG",
-            "alipay": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/alipay.JPG",
+            "wechat": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/pay/wechatpay.JPG",
+            "alipay": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/pay/alipay.JPG",
             "title": "",
             "button": "打赏",
             "alipayText": "支付宝打赏",
@@ -250,7 +250,7 @@ Gitbook的配置文件为book.json，如果没有则新建
             "label": "Edit This Page"
         },
         "insert-logo": {
-            "url": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG",
+            "url": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/logo/logo-1.PNG",
             "style": "background: none; width: 150px; height: 150px;"
         },
         "sharing": {
@@ -508,8 +508,9 @@ Gitbook默认自带有5个插件：
 ```
 1、将图片上传至图床，使用外部链接
 2、将图片路径改为Github上可以访问到的绝对路径（相当于图床）
+（专门在Github上建一个assets仓库用于存放静态资源）
 要点到下载按钮，正确的图片路径如下所示：
-https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG
+https://raw.githubusercontent.com/WeedsFrenzy/assets/master/pay/wechatpay.JPG
 ```
 
 ### 修改文件服务器自动退出的问题

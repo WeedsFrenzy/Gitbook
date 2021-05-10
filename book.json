@@ -26,8 +26,8 @@
     ],
     "pluginsConfig": {
         "donate": {
-            "wechat": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/wechatpay.JPG",
-            "alipay": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/alipay.JPG",
+            "wechat": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/pay/wechatpay.JPG",
+            "alipay": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/pay/alipay.JPG",
             "title": "",
             "button": "打赏",
             "alipayText": "支付宝打赏",
@@ -41,7 +41,7 @@
             "label": "Edit This Page"
         },
         "insert-logo": {
-            "url": "https://raw.githubusercontent.com/WeedsFrenzy/Gitbook/gh-pages/assets/images/logo.PNG",
+            "url": "https://raw.githubusercontent.com/WeedsFrenzy/assets/master/logo/logo-1.PNG",
             "style": "background: none; width: 150px; height: 150px;"
         },
         "sharing": {
